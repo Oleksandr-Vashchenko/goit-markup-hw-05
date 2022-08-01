@@ -66,7 +66,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="hero-btn btn" type="button">Заказать услугу</button>
+          <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!--work section/о работе-->
@@ -500,5 +500,18 @@
         </div>
       </div>
     </footer>
+
+     <!--Модальное окно - Заказать услугу  -->
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button close-modal" type="button" data-modal-close>
+          <svg class="svg-close-modal">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
