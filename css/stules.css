@@ -558,6 +558,7 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--cubic);
 }
 
 .footer-mail:hover,
@@ -591,6 +592,7 @@ body {
 
 .text-btn {
   color: #212121;
+  background-color: #F5F4FA;
   font-family: inherit;
   font-weight: 500;
 
@@ -603,7 +605,8 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
-  transition: box-shadow 250ms var(--cubic);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 /*ховер для кнопок*/
 .text-btn:hover,
@@ -624,6 +627,7 @@ body {
 .portfolio-img-list > .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 250ms var(--cubic);
 }
 
 /* calc ((100% - кол-во марджинов в строке * значение марджина ) / кол-во элементов в строке */
