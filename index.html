@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container heder-container">
         <nav class="nav">
-          <a class="logo logo-header " href="">WEB<span class="logo-dark">STUDIO</span></a>
+          <a class="logo logo-header" href="">WEB<span class="logo-dark">STUDIO</span></a>
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="">Studio</a></li>
             <li class="nav-item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
@@ -35,7 +35,9 @@
             <li class="contact-item">
               <a class="text contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="contact-item"><a class="text contact-tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="contact-item">
+              <a class="text contact-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -45,7 +47,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="btn modal-btn" type="button">Order Service</button>
+          <button class="btn modal-btn" data-modal-open type="button">Order Service</button>
         </div>
       </section>
 
@@ -385,5 +387,16 @@
         </div>
       </div>
     </footer>
+    <!--modal window-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-slose-btn" data-modal-close type="button">
+          <svg class="modal-slose-btn-icon">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
