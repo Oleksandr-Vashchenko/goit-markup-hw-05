@@ -487,8 +487,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  
- overflow-y: auto;
+
+  overflow-y: auto;
   transform: translate(0, 100%);
   transition: var(--transition-dur-and-func);
 }
@@ -517,6 +517,7 @@ body {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -532,7 +533,11 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  transition: transform var(--transition-dur-and-func);
   transform: translate(-50%, -50%);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 .modal-slose-btn {
   width: 24px;
